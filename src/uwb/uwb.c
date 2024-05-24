@@ -3,7 +3,7 @@
 #include <dw1000/platform/deca_spi.h>
 #include <dw1000/platform/port.h>
 
-#include <zephyr.h>
+#include <zephyr/kernel.h>
 
 #include <uwb/uwb.h>
 

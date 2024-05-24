@@ -6,7 +6,7 @@ manifest:
   - name: zephyr
     path: zephyr
     remote: zephyrproject-rtos
-    revision: v3.1.0
+    revision: v3.6.1
     import: true
   - name: zscilib
     path: modules/lib/zscilib

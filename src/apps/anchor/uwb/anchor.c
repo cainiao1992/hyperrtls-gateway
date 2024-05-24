@@ -2,7 +2,7 @@
 #include <stdbool.h>
 #include <string.h>
 
-#include <zephyr.h>
+#include <zephyr/kernel.h>
 #include <zephyr/logging/log.h>
 
 #include <dw1000/decadriver/deca_device_api.h>

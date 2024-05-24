@@ -57,10 +57,10 @@ void hrtls_fail(void) {
     k_fatal_halt(0);
 }
 
-void main(void) {
+int main(void) {
     LOG_INF("Initializing...");
-
-    int err = uwb_module_initialize(UWB_TWR_MODE_SS);
+    int err;
+    err = uwb_module_initialize(UWB_TWR_MODE_SS);
     LOG_INF("uwb init res: %d", err);
     if (err) {
         hrtls_fail();
@@ -104,4 +104,6 @@ void main(void) {
         LOG_INF("next positioning in %" PRId64 " ms", ms_to_sleep);
         k_sleep(K_MSEC(ms_to_sleep));
     }
+    
+    return 0;
 }
